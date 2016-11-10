@@ -16,9 +16,9 @@ body {
 
 header.panel {
     background: url(img/loud_howard.png);
-    background-size: 140px;
+    background-size: 150px;
     background-repeat: no-repeat;
-    background-position: 50px 10px;
+    background-position: 50px 0px;
     background-color: #58edfe;
     height: 120px;
     display: flex;
@@ -60,7 +60,8 @@ header h1 {
     background: url(img/loud_howard.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 10px 10px;
+    background-position: 5px 5px;
+    background-size: 100px;
     background-color: #58edfe;
     width: 80px;
     height: 80px;
