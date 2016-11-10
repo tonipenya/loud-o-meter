@@ -1,0 +1,122 @@
+* {
+    font-family: 'Architects Daughter', cursive;
+}
+
+body {
+    margin: 30px 50px;
+    background-color: #eff3ce;
+}
+
+.panel {
+    border: 4px solid #000;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+header.panel {
+    background: url(img/loud_howard.png);
+    background-size: 140px;
+    background-repeat: no-repeat;
+    background-position: 50px 10px;
+    background-color: #58edfe;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+header .title-container {
+    height: 100%;
+    background: #f3307b;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 80px;
+    font-family: 'Dosis', sans-serif;
+}
+
+#loud-list ul {
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0px;
+}
+
+#loud-list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#loud-list li .avatar {
+    background: url(img/loud_howard.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    background-color: #58edfe;
+    width: 80px;
+    height: 80px;
+    border: 4px solid #000;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#loud-list li * {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#loud-list li .name {
+    font-size: 35px;
+}
+
+#loud-list li .meter {
+    width: 820px;
+    height: 25px;
+    border: 4px solid black;
+    border-radius: 25px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+#loud-list li .meter .progress {
+    height: 100%;
+    display: inline-block;
+    margin-left: 0px;
+}
+
+/*
+    Fake values
+*/
+
+#howard-1 .avatar,
+#howard-1 .meter .progress {
+    width: 22%;
+    background-color: #e03f3f !important;
+}
+
+#howard-2 .avatar,
+#howard-2 .meter .progress {
+    width: 50%;
+    background-color: #a2e03f !important;
+}
+
+#howard-3 .avatar,
+#howard-3 .meter .progress {
+    width: 70%;
+    background-color: #753fe0 !important;
+}
+
+#howard-4 .avatar,
+#howard-4 .meter .progress {
+    width: 30%;
+    background-color: #e0913f !important;
+}
