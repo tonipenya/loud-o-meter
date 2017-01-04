@@ -78,6 +78,10 @@ header .title-container {
 #loud-list li .name {
     font-size: 35px;
     flex: none;
+    width: 110px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 #loud-list li .meter {
@@ -85,7 +89,7 @@ header .title-container {
     border: 4px solid black;
     border-radius: 25px;
     overflow: hidden;
-    flex: 0 1 600px;
+    flex: 1 1 600px;
 }
 
 #loud-list li .meter .progress {

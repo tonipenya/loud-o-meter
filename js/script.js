@@ -16,6 +16,7 @@ function fillHowardView(howards) {
         $('<span/>')
             .addClass('name')
             .text(howard.name)
+            .attr('title', howard.name)
             .appendTo(li);
         var meter = $('<span/>')
             .addClass('meter')
