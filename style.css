@@ -68,6 +68,7 @@ header .title-container {
     border-radius: 50%;
     display: inline-block;
     flex: none;
+    cursor: pointer;
 }
 
 #loud-list li * {
