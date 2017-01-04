@@ -3,14 +3,15 @@ $( document ).ready(function() {
 });
 
 function fillHowardView(howards) {
-    console.log(howards);
     var ul = $('<ul/>');
     howards.forEach(function(howard, idx) {
+        var howardColor = getColor(howards.length, idx);
         var li = $('<li/>')
             .attr('id', 'howard-' + idx)
             .appendTo(ul);
         $('<span/>')
             .addClass('avatar')
+            .css("background-color", getColor(howards.length, idx))
             .appendTo(li);
         $('<span/>')
             .addClass('name')
@@ -21,11 +22,17 @@ function fillHowardView(howards) {
             .appendTo(li);
         $('<span/>')
             .addClass('progress')
-            .width(howard.loudness + '%')
+            .css("background-color", getColor(howards.length, idx))
+            .animate({width: howard.loudness + '%'}, 1000)
             .appendTo(meter);
     });
 
     $('#loud-list').append(ul);
+}
+
+function getColor(numberOfPartitions, index) {
+    var hue = 360/numberOfPartitions*index;
+    return 'hsl(' + hue + ', 72%, 56%)';
 }
 
 function retrieveHowards(callback) {

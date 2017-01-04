@@ -100,24 +100,3 @@ header .title-container {
         max-width: 974px;
     }
 }
-
-#howard-0 .avatar,
-#howard-0 .meter .progress {
-    background-color: #e0913f !important;
-}
-
-#howard-1 .avatar,
-#howard-1 .meter .progress {
-    background-color: #e03f3f !important;
-}
-
-#howard-2 .avatar,
-#howard-2 .meter .progress {
-    background-color: #a2e03f !important;
-}
-
-#howard-3 .avatar,
-#howard-3 .meter .progress {
-    background-color: #753fe0 !important;
-}
-
